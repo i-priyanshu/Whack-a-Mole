@@ -1,4 +1,4 @@
-# Whack-a-mole.github.io
+# Whack-a-mole
 This is a whack-a-mole Game, which i made using HTML, CSS & Javascript.
 
 ## How to play?
