@@ -12,4 +12,4 @@ This is a whack-a-mole Game, which i made using HTML, CSS & Javascript.
 
 :video_game: :video_game:
 
-:otctocat:
+:octocat:
