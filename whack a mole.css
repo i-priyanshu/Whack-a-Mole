@@ -1,0 +1,100 @@
+html{
+	box-sizing: border-box;
+	font-size:10px;
+	background:#ffc600;
+}
+
+*,*:before, *:after{
+	box-sizing:inherit;
+}
+
+body{
+	padding:0;
+	margin:0;
+	font-family: 'Amatic SC',cursive;
+}
+
+h1{
+	text-align:center;
+	font-size:10rem;
+	line-height:1;
+	margin-bottom:0;
+
+}
+
+.score{
+	background:rgba(255,255,255,0.2);
+	padding:0 3rem;
+	line-height:1;
+	border-radius:1rem;
+}
+
+.game{
+	width:600px;
+	height:400px;
+	display:flex;
+	flex-wrap:wrap;
+	margin:0 auto;
+}
+
+.hole{
+	flex:1 0 33.33%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hole:after{
+	display:block;
+	background:url(dirt.svg) bottom center no-repeat;
+	background-size:contain;
+	content:'';
+	width:100%;
+	height:70px;
+	position:absolute;
+	z-index:2;
+	bottom:-30px;
+}
+
+.mole{
+	background:url('mole.svg') bottom center no-repeat;
+	background-size:60%;
+	position:absolute;
+	top:100%;
+	width:100%;
+	height:100%;
+	transition:all 0.4s;
+}
+
+.hole.up .mole{
+	top:0;
+	cursor: pointer;
+}
+
+.button {
+  /*float:right;*/
+  background-color:#ffc600; 
+  border: none;
+  color: white;
+  padding: 15px 0px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  color:#734c03;
+  border-radius: 12px;
+  transition-duration: 0.4s; 
+  cursor:pointer;
+}
+.button:hover{
+	background-color:#734c03;
+	color:#ffc600;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.final{
+  color:#730c20f0;
+  padding-top:15px;
+  text-align:center;
+  font-size: 32px;
+}
