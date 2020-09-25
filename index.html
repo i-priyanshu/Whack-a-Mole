@@ -66,9 +66,9 @@
 			if(timeUp)
 			{
 				if(score==0) final.textContent = "Mama's Boy";
-				else if(score>0 && score<3) final.textContent= "ROOKIE!";
-				else if(score>3&&score<7) final.textContent="VETERAN!";
-				else final.textContent="GRANDMASTER!";
+				else if(score>0 && score<=3) final.textContent= "ROOKIE!";
+				else if(score>3&&score<=7) final.textContent="VETERAN!";
+				else if(score>=7) final.textContent="GRANDMASTER!";
 			}
 		},time);
 	}
